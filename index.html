@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ClawAI Master Plan v2 - 08/04/2026</title>
+  <title>ClawAI Master Plan v3 - 08/04/2026</title>
   <style>
     body{font-family:Inter,Segoe UI,Arial,sans-serif;background:#0b1020;color:#e7ebff;margin:0;line-height:1.55}
     .wrap{max-width:1100px;margin:auto;padding:28px}
@@ -15,32 +15,48 @@
     table{width:100%;border-collapse:collapse;margin:10px 0 14px;background:#0f1730}
     th,td{border:1px solid #2a3968;padding:10px 12px;text-align:left;font-size:14px}
     th{background:#1a2550;color:#bcd0ff}
-    .hero{background:linear-gradient(135deg,#283b7a,#0f8aa8);border-radius:16px;padding:24px;margin-bottom:18px}
-    .muted{color:#9fb0dd}
-    .kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:18px}
+    .hero{background:linear-gradient(135deg,#1a2f6e,#0a7a9a);border-radius:16px;padding:24px;margin-bottom:18px}
+    .muted{color:#9fb0dd;font-size:13px}
+    .kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-bottom:18px}
     .pill{background:#182447;border:1px solid #35508f;border-radius:10px;padding:12px}
-    .pill b{font-size:20px}
-    .badge{display:inline-block;background:#1e3a6e;border:1px solid #4a6fc4;border-radius:6px;padding:2px 10px;font-size:12px;margin-left:8px;color:#a0c4ff}
-    .new{background:#0d3d1f;border-color:#2d7a4a;color:#5ddb8a}
-    .updated{background:#2a2000;border-color:#6b5000;color:#f5c842}
+    .pill b{font-size:20px;display:block;margin-top:4px}
+    .badge{display:inline-block;background:#1e3a6e;border:1px solid #4a6fc4;border-radius:6px;padding:2px 10px;font-size:11px;margin-left:8px;color:#a0c4ff;vertical-align:middle}
+    .badge-new{background:#0d3d1f;border-color:#2d7a4a;color:#5ddb8a}
+    .badge-upd{background:#2a2000;border-color:#6b5000;color:#f5c842}
+    .badge-crit{background:#3d0d0d;border-color:#7a2d2d;color:#ff8a8a}
     ul{margin:8px 0;padding-left:20px}
-    li{margin:4px 0}
+    li{margin:5px 0}
+    .gantt-row{display:grid;grid-template-columns:180px repeat(12,1fr);gap:2px;margin:3px 0;align-items:center;font-size:12px}
+    .gantt-label{color:#c8d9ff;font-size:12px;padding-right:8px}
+    .gantt-cell{height:22px;border-radius:4px;background:#1a2550}
+    .gantt-active{background:#2563eb}
+    .gantt-event{background:#7c3aed}
+    .gantt-legal{background:#dc2626}
+    .gantt-dev{background:#059669}
+    .gantt-mkt{background:#d97706}
+    .risk-high{color:#ff6b6b;font-weight:600}
+    .risk-med{color:#f5c842}
+    .cashflow-pos{color:#5ddb8a}
+    .cashflow-neg{color:#ff8a8a}
   </style>
 </head>
 <body>
 <div class="wrap">
   <div class="hero">
-    <h1>🚀 ClawAI Master Plan <span style="font-size:20px;opacity:0.7">v2</span></h1>
-    <div class="muted">Prepared by Grey AI Team (Violet + Moon + Tinh Tú) · Date: 08/04/2026</div>
-    <div style="margin-top:10px;font-size:13px;color:#a8d4f5">v2: Crypto-native layer added (Moon) — Airdrop = USDT · Event 50 pax</div>
+    <h1>🚀 ClawAI Master Plan <span style="font-size:20px;opacity:0.7">v3</span></h1>
+    <div class="muted">Prepared by Grey AI Team (Violet + Moon + Tinh Tú) · 08/04/2026</div>
+    <div style="margin-top:8px;font-size:12px;color:#a8d4f5">
+      v3: Operations layer (Moon) — Master Timeline · RACI · Cash Flow · Legal Checklist · Tech Gate · Review Cadence
+    </div>
   </div>
 
   <div class="kpi">
-    <div class="pill"><div>One-time plan</div><b>$49k–$53k</b></div>
+    <div class="pill"><div>One-time total</div><b>$38k–$43k</b></div>
     <div class="pill"><div>Monthly burn (base)</div><b>$11.6k–$12k</b></div>
     <div class="pill"><div>Monthly burn (full scale)</div><b>$21.6k–$22k</b></div>
-    <div class="pill"><div>Grand opening event</div><b>$11k</b><div style="font-size:11px;color:#9fb0dd">50 pax</div></div>
-    <div class="pill"><div>Airdrop (USDT)</div><b>$3k–$5k</b></div>
+    <div class="pill"><div>Grand opening (50 pax)</div><b>$11k</b></div>
+    <div class="pill"><div>Airdrop (USDT pool)</div><b>$3k–$5k</b></div>
+    <div class="pill"><div>Liquid needed M0–M3</div><b>~$80k</b></div>
   </div>
 
   <!-- PHẦN 1 -->
@@ -53,68 +69,68 @@
       <tr><td>2</td><td>Incorporation (ACRA + CSP)</td><td>1–3 ngày</td><td>SGD 300 + SGD 800–1,500</td></tr>
       <tr><td>3</td><td>Nominee Director (nếu non-resident)</td><td>Cùng bước 2</td><td>SGD 2,000–3,000/năm</td></tr>
       <tr><td>4</td><td>Company Secretary (bắt buộc)</td><td>Trong 6 tháng</td><td>SGD 300–600/năm</td></tr>
-      <tr><td>5</td><td>Registered address / office</td><td>Trước đăng ký</td><td>SGD 1,500–2,000/tháng (private office)</td></tr>
-      <tr><td>6</td><td>Mở tài khoản ngân hàng</td><td>1–4 tuần</td><td>Hỗ trợ ~$370–$1,110 + min balance</td></tr>
+      <tr><td>5</td><td>Registered address / office</td><td>Trước đăng ký</td><td>SGD 1,500–2,000/tháng</td></tr>
+      <tr><td>6</td><td>Mở tài khoản ngân hàng</td><td>1–4 tuần</td><td>~$370–$1,110 + min balance</td></tr>
     </table>
-    <div class="muted">Tổng timeline khuyến nghị: ~2–4 tuần để fully operational.</div>
+    <div class="muted">Timeline khuyến nghị: ~2–4 tuần để fully operational.</div>
 
     <h3>1.2 One-time setup cost</h3>
     <table>
       <tr><th>Khoản</th><th>USD ước tính</th></tr>
-      <tr><td>ACRA fees (name + registration)</td><td>~$233</td></tr>
+      <tr><td>ACRA fees</td><td>~$233</td></tr>
       <tr><td>CSP incorporation fee</td><td>~$740–$1,100</td></tr>
       <tr><td>Nominee Director (year 1)</td><td>~$1,480–$2,220</td></tr>
       <tr><td>Company Secretary (year 1)</td><td>~$220–$444</td></tr>
-      <tr><td>Bank support + reserve</td><td>~$370–$1,110 + reserve</td></tr>
+      <tr><td>Bank support + reserve</td><td>~$370–$1,110</td></tr>
       <tr><td>Accounting/bookkeeping</td><td>~$1,000–$2,000</td></tr>
-      <tr><th>Tổng setup (chưa office)</th><th>~$4,000–$7,000</th></tr>
+      <tr><th>Tổng setup</th><th>~$4,000–$7,000</th></tr>
     </table>
 
-    <h3>1.3 Office để họp</h3>
+    <h3>1.3 Office options</h3>
     <table>
       <tr><th>Option</th><th>USD/tháng</th><th>Phù hợp</th></tr>
       <tr><td>Virtual office</td><td>$37–$220</td><td>Địa chỉ pháp lý</td></tr>
       <tr><td>Co-working hot desk</td><td>$200–$400</td><td>Cá nhân</td></tr>
-      <tr><td><b>Private office</b></td><td><b>$590–$1,850</b></td><td><b>Phù hợp nhất cho họp team</b></td></tr>
-      <tr><td>Dedicated lease</td><td>$3,000–$8,000+</td><td>Giai đoạn scale</td></tr>
+      <tr><td><b>Private office</b></td><td><b>$590–$1,850</b></td><td><b>✅ Recommended — họp team</b></td></tr>
+      <tr><td>Dedicated lease</td><td>$3,000–$8,000+</td><td>Scale sau</td></tr>
     </table>
   </div>
 
   <!-- PHẦN 2 -->
-  <h2>PHẦN 2 — Master Marketing Plan cho ClawAI (3 tháng)</h2>
+  <h2>PHẦN 2 — Master Marketing Plan (3 tháng)</h2>
   <div class="card">
     <h3>2.1 Positioning</h3>
     <ul>
       <li><b>Core message:</b> Build AI agents that work for you — no code, no limits.</li>
-      <li><b>ICP primary:</b> Solo founders & micro-teams (1–10), EN-speaking, global.</li>
-      <li><b>Differentiation:</b> simpler setup vs Make/n8n, lower entry cost vs enterprise AI tools.</li>
+      <li><b>ICP:</b> Solo founders & micro-teams (1–10), EN-speaking, global.</li>
+      <li><b>Differentiation:</b> Simpler than Make/n8n, cheaper than enterprise AI tools.</li>
     </ul>
 
-    <h3>2.2 Channel strategy <span class="badge updated">UPDATED</span></h3>
+    <h3>2.2 Channel strategy</h3>
     <table>
-      <tr><th>Channel</th><th>Execution</th><th>Cadence/Budget</th></tr>
-      <tr><td>X/Twitter</td><td>Thought leadership, build-in-public, founder threads</td><td>2–3 posts/ngày</td></tr>
-      <tr><td>LinkedIn</td><td>B2B case studies, founder narrative</td><td>1 post/ngày</td></tr>
-      <tr><td>YouTube</td><td>Demos/tutorials/live build, AMA replays</td><td>2–3 video/tuần</td></tr>
-      <tr><td>Reddit</td><td>Community trust posts (non-spam)</td><td>3–4 post/tuần</td></tr>
-      <tr><td>Telegram</td><td>Main community hub — news, polls, quizzes, milestones</td><td>3–5 posts/ngày</td></tr>
-      <tr><td>Discord</td><td>Builder/dev community, support</td><td>Daily active moderation</td></tr>
-      <tr><td>TikTok/Reels</td><td>60s explainers, behind-the-scenes, how ClawAI works</td><td>3–5 clips/tuần</td></tr>
-      <tr><td>Paid (M3)</td><td>Google + Reddit + LinkedIn Ads</td><td>$2,000/tháng ở M3</td></tr>
+      <tr><th>Channel</th><th>Execution</th><th>Cadence</th></tr>
+      <tr><td>X/Twitter</td><td>Thought leadership, build-in-public, founder threads, memes</td><td>2–3x/ngày</td></tr>
+      <tr><td>Telegram</td><td>Main community hub — news, polls, quizzes, milestones</td><td>3–5x/ngày</td></tr>
+      <tr><td>LinkedIn</td><td>B2B case studies, founder narrative</td><td>1x/ngày</td></tr>
+      <tr><td>YouTube</td><td>Demos, tutorials, AMA replays</td><td>2–3 video/tuần</td></tr>
+      <tr><td>TikTok/Reels</td><td>60s explainers, behind-the-scenes</td><td>3–5x/tuần</td></tr>
+      <tr><td>Discord</td><td>Builder/dev community, support</td><td>Daily moderation</td></tr>
+      <tr><td>Reddit</td><td>Community trust posts (non-spam)</td><td>3–4x/tuần</td></tr>
+      <tr><td>Paid ads (M3)</td><td>Google + Reddit + LinkedIn</td><td>$2,000/tháng</td></tr>
     </table>
 
-    <h3>2.3 Crypto-native PR <span class="badge new">NEW</span></h3>
+    <h3>2.3 Crypto-native PR</h3>
     <ul>
-      <li>List trên <b>CoinGecko</b> và <b>CoinMarketCap</b> (project page)</li>
-      <li>Submit lên <b>CryptoSlate, Decrypt, BeInCrypto, The Block</b></li>
+      <li>List trên <b>CoinGecko</b> và <b>CoinMarketCap</b> — project page</li>
+      <li>Submit: CryptoSlate, Decrypt, BeInCrypto, The Block</li>
       <li>Sponsored articles: CoinTelegraph / Bitcoinist (~$1,500–3,000/bài)</li>
       <li>Press release qua PR Newswire hoặc CryptoPR</li>
-      <li>Founder X/Twitter threads — trust signal mạnh hơn paid PR</li>
+      <li>Founder X threads — trust signal mạnh hơn paid PR</li>
     </ul>
 
-    <h3>2.4 AMA Series <span class="badge new">NEW</span></h3>
+    <h3>2.4 AMA Series</h3>
     <table>
-      <tr><th>Tuần</th><th>Platform</th><th>Host</th><th>Audience</th></tr>
+      <tr><th>Timing</th><th>Platform</th><th>Host</th><th>Audience</th></tr>
       <tr><td>Pre-launch</td><td>Telegram community</td><td>Grey + team</td><td>Early community</td></tr>
       <tr><td>Launch week</td><td>X Spaces</td><td>Grey + 1 investor</td><td>Crypto Twitter</td></tr>
       <tr><td>Month 2</td><td>Discord AMA</td><td>Dev team</td><td>Builder community</td></tr>
@@ -122,81 +138,72 @@
     </table>
     <div class="muted">Mỗi AMA: announcement 48h trước · recap thread sau · clip cut cho Reels/TikTok</div>
 
-    <h3>2.5 Airdrop Campaign (USDT) <span class="badge new">NEW</span></h3>
+    <h3>2.5 Airdrop Campaign (USDT)</h3>
     <table>
-      <tr><th>Phase</th><th>Mô tả</th><th>Action yêu cầu</th></tr>
-      <tr><td><b>Phase 1 — Waitlist</b></td><td>Pre-launch buzz builder</td><td>Follow X + join Telegram + refer 3 friends → earn USDT allocation</td></tr>
-      <tr><td><b>Phase 2 — Task</b></td><td>Onboarding funnel</td><td>Connect wallet, try demo, share post → earn USDT reward</td></tr>
-      <tr><td><b>Phase 3 — Community</b></td><td>Top contributors</td><td>Active members, early users → bonus USDT allocation</td></tr>
+      <tr><th>Phase</th><th>Mô tả</th><th>Action</th></tr>
+      <tr><td><b>Phase 1 — Waitlist</b></td><td>Pre-launch buzz</td><td>Follow X + join Telegram + refer 3 friends → USDT allocation</td></tr>
+      <tr><td><b>Phase 2 — Task</b></td><td>Onboarding funnel</td><td>Connect wallet + try demo + share post → USDT reward</td></tr>
+      <tr><td><b>Phase 3 — Community</b></td><td>Top contributors</td><td>Active members + early users → bonus USDT</td></tr>
     </table>
     <ul>
-      <li><b>Platforms:</b> Galxe, Zealy (formerly Crew3), TaskOn</li>
-      <li><b>Budget airdrop:</b> $3,000–$5,000 USDT total (tool fees + rewards pool)</li>
-      <li><b>Target:</b> 5,000–10,000 wallet signups trong tháng 1–2</li>
+      <li><b>Platforms:</b> Galxe, Zealy, TaskOn</li>
+      <li><b>Budget:</b> $3,000–$5,000 USDT (tool fees + rewards pool) — khoản riêng ngoài marketing budget</li>
+      <li><b>Target:</b> 5,000–10,000 wallet signups trong M1–M2</li>
     </ul>
 
-    <h3>2.6 Community Infrastructure <span class="badge new">NEW</span></h3>
+    <h3>2.6 Community Infrastructure</h3>
     <table>
       <tr><th>Channel</th><th>Purpose</th><th>Target M1</th><th>Target M3</th></tr>
-      <tr><td>Telegram Group</td><td>Main community hub</td><td>1,000</td><td>5,000</td></tr>
-      <tr><td>Telegram Channel</td><td>Announcements only</td><td>500</td><td>3,000</td></tr>
-      <tr><td>Discord Server</td><td>Builder/dev community</td><td>300</td><td>2,000</td></tr>
-      <tr><td>X/Twitter</td><td>Public presence + Crypto Twitter</td><td>500</td><td>5,000</td></tr>
-      <tr><td>YouTube</td><td>Deep content, AMA replays</td><td>200</td><td>2,000</td></tr>
+      <tr><td>Telegram Group</td><td>Main hub</td><td>1,000</td><td>5,000</td></tr>
+      <tr><td>Telegram Channel</td><td>Announcements</td><td>500</td><td>3,000</td></tr>
+      <tr><td>Discord</td><td>Builder/dev</td><td>300</td><td>2,000</td></tr>
+      <tr><td>X/Twitter</td><td>Public + Crypto Twitter</td><td>500</td><td>5,000</td></tr>
+      <tr><td>YouTube</td><td>Deep content</td><td>200</td><td>2,000</td></tr>
     </table>
-    <div class="muted">Moderators 24/7 · anti-spam bot · daily engagement prompts · weekly recap posts</div>
+    <div class="muted">Cần 2–3 moderators · anti-spam bot · ~$500–1,000/tháng cho mod team</div>
 
-    <h3>2.7 KOL & Influencer Outreach <span class="badge updated">UPDATED</span></h3>
+    <h3>2.7 KOL & Influencer (3 tiers)</h3>
     <table>
-      <tr><th>Tier</th><th>Follower Range</th><th>Budget/Post</th><th>Số lượng</th><th>Total</th></tr>
-      <tr><td>Micro-KOL (crypto)</td><td>5K–50K</td><td>$200–500</td><td>10</td><td>~$3,500</td></tr>
-      <tr><td>Mid-tier (CT/YouTube)</td><td>50K–200K</td><td>$800–1,500</td><td>3</td><td>~$3,500</td></tr>
-      <tr><td>Macro (nếu có dư)</td><td>200K+</td><td>$3,000+</td><td>1</td><td>~$3,000</td></tr>
+      <tr><th>Tier</th><th>Followers</th><th>Budget/Post</th><th>Count</th><th>Total</th></tr>
+      <tr><td>Micro-KOL</td><td>5K–50K</td><td>$200–500</td><td>10</td><td>~$3,500</td></tr>
+      <tr><td>Mid-tier</td><td>50K–200K</td><td>$800–1,500</td><td>3</td><td>~$3,500</td></tr>
+      <tr><td>Macro</td><td>200K+</td><td>$3,000+</td><td>1</td><td>~$3,000</td></tr>
     </table>
-    <div class="muted">Focus: Crypto Twitter KOLs + SEA-focused YouTube reviewers · Tránh paid shills — aim for genuine review content</div>
+    <div class="muted">Focus: Crypto Twitter + SEA YouTube · Tránh paid shills, aim for genuine review</div>
 
-    <h3>2.8 Content Calendar — Crypto Style <span class="badge updated">UPDATED</span></h3>
-    <table>
-      <tr><th>Platform</th><th>Cadence</th><th>Content type</th></tr>
-      <tr><td>X/Twitter</td><td>2–3x/ngày</td><td>Memes, alpha threads, market commentary, product updates</td></tr>
-      <tr><td>Telegram</td><td>3–5x/ngày</td><td>News, community polls, quizzes, milestone announcements</td></tr>
-      <tr><td>YouTube</td><td>1x/tuần</td><td>Deep dives, tutorials, AMA replays</td></tr>
-      <tr><td>TikTok/Reels</td><td>3–5x/tuần</td><td>60s explainers, behind-the-scenes, how ClawAI works</td></tr>
-    </table>
-    <p><b>Content pillars:</b></p>
+    <h3>2.8 Content Pillars</h3>
     <ul>
       <li>🤖 Product — features, demos, updates (30%)</li>
       <li>📈 Alpha/Market — AI + crypto trends (25%)</li>
-      <li>🧠 Education — tutorials, use cases, how-to (25%)</li>
+      <li>🧠 Education — tutorials, how-to, use cases (25%)</li>
       <li>🏆 Community — milestones, user stories, memes (20%)</li>
     </ul>
 
     <h3>2.9 3-month goals</h3>
     <table>
-      <tr><th>Month</th><th>Theme</th><th>Target chính</th></tr>
-      <tr><td>M1</td><td>Awareness + Airdrop Phase 1</td><td>1,000 waitlist · 3,000+ wallet signups</td></tr>
-      <tr><td>M2</td><td>Engagement + Airdrop Phase 2</td><td>3,000 signups · 100 paying users · community 2,000+</td></tr>
-      <tr><td>M3</td><td>Conversion + Airdrop Phase 3</td><td>500 paying users · $10k MRR · community 5,000+</td></tr>
+      <tr><th>Month</th><th>Theme</th><th>Target</th></tr>
+      <tr><td>M1</td><td>Awareness + Airdrop Ph.1</td><td>1,000 waitlist · 3,000+ wallet signups</td></tr>
+      <tr><td>M2</td><td>Engagement + Airdrop Ph.2</td><td>3,000 signups · 100 paying users · community 2,000+</td></tr>
+      <tr><td>M3</td><td>Conversion + Airdrop Ph.3</td><td>500 paying users · $10k MRR · community 5,000+</td></tr>
     </table>
 
-    <h3>2.10 Budget breakdown ($20,000 / 3 tháng) <span class="badge updated">UPDATED</span></h3>
+    <h3>2.10 Budget breakdown ($20,000 / 3 tháng)</h3>
     <table>
       <tr><th>Khoản</th><th>Total</th></tr>
       <tr><td>Content creation</td><td>$4,000</td></tr>
       <tr><td>Paid ads</td><td>$3,000</td></tr>
       <tr><td>KOL/Influencer (3 tiers)</td><td>$4,500</td></tr>
-      <tr><td>Crypto PR/media (CoinTelegraph, press release)</td><td>$2,500</td></tr>
-      <tr><td>Airdrop platform tools (Galxe/Zealy)</td><td>$1,000</td></tr>
-      <tr><td>Community infrastructure + moderation</td><td>$1,000</td></tr>
+      <tr><td>Crypto PR/media</td><td>$2,500</td></tr>
+      <tr><td>Airdrop platform tools</td><td>$1,000</td></tr>
+      <tr><td>Community mod team</td><td>$1,500</td></tr>
       <tr><td>Tools/software</td><td>$900</td></tr>
-      <tr><td>Misc + reserve</td><td>$3,100</td></tr>
+      <tr><td>Reserve</td><td>$2,600</td></tr>
       <tr><th>TOTAL</th><th>$20,000</th></tr>
     </table>
-    <div class="muted">⚠️ Airdrop USDT rewards pool ($3,000–$5,000) là khoản riêng — nằm ngoài marketing budget trên</div>
 
     <h3>2.11 Full social mode ($10k/tháng)</h3>
     <table>
-      <tr><th>Khoản</th><th>USD/tháng</th></tr>
+      <tr><th>Khoản</th><th>/tháng</th></tr>
       <tr><td>Video editor</td><td>$1,500</td></tr>
       <tr><td>Designer</td><td>$1,000</td></tr>
       <tr><td>Copywriter</td><td>$1,000</td></tr>
@@ -208,17 +215,17 @@
   </div>
 
   <!-- PHẦN 3 -->
-  <h2>PHẦN 3 — Event Master Plan (Grand Opening Singapore) <span class="badge updated">UPDATED — 50 pax</span></h2>
+  <h2>PHẦN 3 — Event Master Plan (Grand Opening · 50 pax)</h2>
   <div class="card">
-    <h3>3.1 Event overview</h3>
+    <h3>3.1 Overview</h3>
     <ul>
       <li><b>Format:</b> Tech Launch Party + Live Demo Night</li>
-      <li><b>Scale:</b> ~50 khách (investors, partners, press, KOLs)</li>
+      <li><b>Scale:</b> ~50 khách curated (investors, partners, press, KOLs)</li>
       <li><b>Duration:</b> 6PM–10PM</li>
-      <li><b>Venue recommendation:</b> Block71 (One-North) hoặc The Working Capitol (CBD) — private room 50 pax</li>
+      <li><b>Venue:</b> Block71 (One-North) hoặc The Working Capitol (CBD)</li>
     </ul>
 
-    <h3>3.2 Budget ($11,000) <span class="badge updated">UPDATED</span></h3>
+    <h3>3.2 Budget ($11,000)</h3>
     <table>
       <tr><th>Hạng mục</th><th>USD</th></tr>
       <tr><td>Venue (private room 50 pax)</td><td>$1,500</td></tr>
@@ -229,7 +236,7 @@
       <tr><td>Photo + video</td><td>$1,000</td></tr>
       <tr><td>PR + press kit</td><td>$800</td></tr>
       <tr><td>Demo stations</td><td>$700</td></tr>
-      <tr><td>Swag bags (50 pax)</td><td>$400</td></tr>
+      <tr><td>Swag bags</td><td>$400</td></tr>
       <tr><td>Contingency</td><td>$800</td></tr>
       <tr><th>TOTAL</th><th>$11,000</th></tr>
     </table>
@@ -238,43 +245,220 @@
     <table>
       <tr><th>KPI</th><th>Target</th></tr>
       <tr><td>Attendees</td><td>~50 (curated)</td></tr>
-      <tr><td>Media mentions</td><td>5+ bài</td></tr>
+      <tr><td>Media mentions</td><td>5+</td></tr>
       <tr><td>Investor 1-on-1s</td><td>5–10</td></tr>
       <tr><td>New signups from event</td><td>100+</td></tr>
       <tr><td>Livestream viewers</td><td>500+</td></tr>
     </table>
   </div>
 
-  <!-- TÀI CHÍNH TỔNG HỢP -->
-  <h2>Tổng hợp tài chính launch <span class="badge updated">UPDATED v2</span></h2>
-  <div class="card">
-    <h3>One-time</h3>
-    <table>
-      <tr><th>Khoản</th><th>USD</th></tr>
-      <tr><td>Singapore setup</td><td>~$4,000–$7,000</td></tr>
-      <tr><td>Marketing 3 tháng</td><td>$20,000</td></tr>
-      <tr><td>Grand opening event (50 pax)</td><td>$11,000</td></tr>
-      <tr><td>Airdrop USDT rewards pool</td><td>$3,000–$5,000</td></tr>
-      <tr><th>TỔNG</th><th>~$38,000–$43,000</th></tr>
-    </table>
-    <div class="muted">💡 v2 giảm so với v1 ($44k–47k) nhờ event scale down 50 pax — tiết kiệm ~$9k</div>
+  <!-- PHẦN 4 — NEW: OPERATIONS LAYER -->
+  <h2>PHẦN 4 — Execution Readiness <span class="badge badge-new">NEW v3</span></h2>
 
-    <h3>Monthly burn</h3>
+  <div class="card">
+    <h3>4.1 Master Timeline — 12 tuần <span class="badge badge-crit">CRITICAL</span></h3>
+    <div style="overflow-x:auto;margin-top:12px">
+      <table style="min-width:900px">
+        <tr>
+          <th style="width:180px">Track</th>
+          <th>W1</th><th>W2</th><th>W3</th><th>W4</th>
+          <th>W5</th><th>W6</th><th>W7</th><th>W8</th>
+          <th>W9</th><th>W10</th><th>W11</th><th>W12</th>
+        </tr>
+        <tr>
+          <td><b>🏢 Legal/Corp</b></td>
+          <td colspan="2" style="background:#1a3a6e;text-align:center;color:#7fb3ff;font-size:12px">Incorporate ACRA</td>
+          <td colspan="2" style="background:#1a3a6e;text-align:center;color:#7fb3ff;font-size:12px">Open bank account</td>
+          <td colspan="2" style="background:#1a2a5e;text-align:center;color:#6a9fef;font-size:12px">Legal opinion MAS</td>
+          <td colspan="6" style="background:#0f1730;text-align:center;color:#4a6fc4;font-size:11px">Ongoing compliance</td>
+        </tr>
+        <tr>
+          <td><b>👥 Team Hire</b></td>
+          <td colspan="2" style="background:#0f1730"></td>
+          <td colspan="2" style="background:#1a3a6e;text-align:center;color:#7fb3ff;font-size:12px">Hire CEO + Dev Lead</td>
+          <td colspan="2" style="background:#1a3a6e;text-align:center;color:#7fb3ff;font-size:12px">Hire MKT Lead</td>
+          <td colspan="6" style="background:#0f1730;text-align:center;color:#4a6fc4;font-size:11px">Team operational</td>
+        </tr>
+        <tr>
+          <td><b>🛠️ Dev</b></td>
+          <td colspan="2" style="background:#0f1730"></td>
+          <td colspan="2" style="background:#0d3d1f;text-align:center;color:#5ddb8a;font-size:12px">Setup infra</td>
+          <td colspan="3" style="background:#0d3d1f;text-align:center;color:#5ddb8a;font-size:12px">MVP build sprint</td>
+          <td colspan="2" style="background:#0d3d1f;text-align:center;color:#5ddb8a;font-size:12px">Beta test</td>
+          <td style="background:#1a3d1f;text-align:center;color:#5ddb8a;font-size:11px">Tech freeze</td>
+          <td style="background:#7c3aed;text-align:center;color:#fff;font-size:11px">🚀 Launch</td>
+          <td style="background:#0f1730"></td>
+        </tr>
+        <tr>
+          <td><b>📣 Marketing</b></td>
+          <td colspan="2" style="background:#3d2a00;text-align:center;color:#f5c842;font-size:12px">Community setup</td>
+          <td colspan="2" style="background:#3d2a00;text-align:center;color:#f5c842;font-size:12px">Airdrop Ph.1</td>
+          <td colspan="2" style="background:#3d2a00;text-align:center;color:#f5c842;font-size:12px">KOL outreach</td>
+          <td colspan="2" style="background:#3d2a00;text-align:center;color:#f5c842;font-size:12px">Airdrop Ph.2</td>
+          <td colspan="2" style="background:#3d2a00;text-align:center;color:#f5c842;font-size:12px">PR blitz</td>
+          <td colspan="2" style="background:#3d2a00;text-align:center;color:#f5c842;font-size:12px">Airdrop Ph.3</td>
+        </tr>
+        <tr>
+          <td><b>🎉 Event</b></td>
+          <td colspan="5" style="background:#0f1730"></td>
+          <td colspan="4" style="background:#3d0060;text-align:center;color:#d084ff;font-size:12px">Event prep</td>
+          <td style="background:#3d0060;text-align:center;color:#d084ff;font-size:11px">Rehearsal</td>
+          <td style="background:#7c3aed;text-align:center;color:#fff;font-size:11px">🎉 GO</td>
+          <td style="background:#0f1730"></td>
+        </tr>
+      </table>
+    </div>
+    <div class="muted" style="margin-top:8px">⚠️ Critical path: Incorporate → Bank account → Legal opinion → Hire → Dev → Tech freeze → Launch. Nếu bước nào trễ → toàn timeline trượt.</div>
+  </div>
+
+  <div class="card">
+    <h3>4.2 RACI Matrix <span class="badge badge-crit">CRITICAL</span></h3>
     <table>
-      <tr><th>Khoản</th><th>USD/tháng</th></tr>
-      <tr><td>CEO</td><td>$5,000</td></tr>
-      <tr><td>Dev team</td><td>$2,500</td></tr>
-      <tr><td>Marketing team</td><td>$2,500</td></tr>
-      <tr><td>Singapore corp recurring (sec + nominee + office + accounting)</td><td>~$1,600</td></tr>
-      <tr><th>Base burn</th><th>~$11,600–$12,000</th></tr>
-      <tr><td>+ Full social media execution</td><td>+$10,000</td></tr>
-      <tr><th>Full scale burn</th><th>~$21,600–$22,000</th></tr>
+      <tr><th>Task</th><th>Responsible</th><th>Accountable</th><th>Deadline</th></tr>
+      <tr><td>Incorporation Singapore</td><td>CSP Partner</td><td>Grey/CEO</td><td>W1–W2</td></tr>
+      <tr><td>Nominee Director</td><td>CSP Partner</td><td>CEO</td><td>W2</td></tr>
+      <tr><td>Bank account</td><td>CEO</td><td>Grey</td><td>W3–W4</td></tr>
+      <tr><td>Legal opinion (MAS + MLM)</td><td>Legal firm SG</td><td>CEO</td><td>W5–W6</td></tr>
+      <tr><td>Dev sprint 1 — MVP</td><td>Dev Lead</td><td>CEO</td><td>W4–W7</td></tr>
+      <tr><td>Smart contract audit</td><td>External auditor</td><td>Dev Lead</td><td>W8–W9</td></tr>
+      <tr><td>Community setup (TG/Discord/X)</td><td>MKT Lead</td><td>CEO</td><td>W1–W2</td></tr>
+      <tr><td>Airdrop campaign setup</td><td>MKT Lead</td><td>CEO</td><td>W3</td></tr>
+      <tr><td>KOL outreach</td><td>MKT Lead</td><td>CEO</td><td>W5–W6</td></tr>
+      <tr><td>Event execution</td><td>Event Lead</td><td>Grey/CEO</td><td>W11</td></tr>
+      <tr><td>Press kit + media</td><td>MKT Lead</td><td>CEO</td><td>W9–W10</td></tr>
     </table>
   </div>
 
-  <p class="muted" style="margin-top:24px">
+  <div class="card">
+    <h3>4.3 Cash Flow M0–M3 <span class="badge badge-crit">CRITICAL</span></h3>
+    <table>
+      <tr><th>Khoản</th><th>M0 (Setup)</th><th>M1</th><th>M2</th><th>M3</th></tr>
+      <tr><td>Singapore setup</td><td class="cashflow-neg">-$4–7K</td><td>—</td><td>—</td><td>—</td></tr>
+      <tr><td>Legal opinion</td><td class="cashflow-neg">-$2–3K</td><td>—</td><td>—</td><td>—</td></tr>
+      <tr><td>Event prepayment</td><td class="cashflow-neg">-$5K</td><td class="cashflow-neg">-$6K</td><td>—</td><td>—</td></tr>
+      <tr><td>Monthly burn (base)</td><td>—</td><td class="cashflow-neg">-$12K</td><td class="cashflow-neg">-$12K</td><td class="cashflow-neg">-$12K</td></tr>
+      <tr><td>Marketing budget</td><td>—</td><td class="cashflow-neg">-$7K</td><td class="cashflow-neg">-$6.5K</td><td class="cashflow-neg">-$6.5K</td></tr>
+      <tr><td>Airdrop USDT pool</td><td class="cashflow-neg">-$3–5K</td><td>—</td><td>—</td><td>—</td></tr>
+      <tr><td>Revenue estimate</td><td>—</td><td class="cashflow-pos">+$0</td><td class="cashflow-pos">+$2K</td><td class="cashflow-pos">+$10K</td></tr>
+      <tr style="font-weight:600"><td>Net per month</td><td class="cashflow-neg">-$14–20K</td><td class="cashflow-neg">-$25K</td><td class="cashflow-neg">-$16.5K</td><td class="cashflow-neg">-$8.5K</td></tr>
+    </table>
+    <div class="muted" style="margin-top:8px">
+      💡 Tổng outflow 3 tháng đầu: <b style="color:#ff8a8a">~$64–70K</b> · Recommended liquid buffer: <b style="color:#ff8a8a">~$80K</b> (bao gồm contingency)<br>
+      ⚠️ Anh cần xác nhận capital source trước W1 — không có capital plan = không chạy timeline được.
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>4.4 Legal & Compliance Checklist <span class="badge badge-crit">HIGHEST RISK</span></h3>
+    <p style="color:#ff8a8a;font-size:13px">⚠️ Violet + Moon đều flag đây là risk cao nhất — 2 agent độc lập, cùng kết luận. Cần resolve trước launch.</p>
+    <table>
+      <tr><th>Item</th><th>Risk</th><th>Action</th><th>Owner</th></tr>
+      <tr>
+        <td>MAS crypto regulations</td>
+        <td class="risk-high">🔴 High</td>
+        <td>Legal opinion từ Singapore law firm — xác nhận ClawAI có cần MAS license không</td>
+        <td>CEO + Legal</td>
+      </tr>
+      <tr>
+        <td>Airdrop USDT — AML compliance</td>
+        <td class="risk-high">🔴 High</td>
+        <td>USDT distribution = money movement. Cần KYC/AML check, verify không phạm Payment Services Act</td>
+        <td>Legal</td>
+      </tr>
+      <tr>
+        <td>MLM 6-cấp commission structure</td>
+        <td class="risk-high">🔴 High</td>
+        <td>Singapore Multi-Level Marketing Act — verify không vi phạm pyramid scheme rules</td>
+        <td>Legal</td>
+      </tr>
+      <tr>
+        <td>Terms of Service + Privacy Policy</td>
+        <td class="risk-med">🟡 Medium</td>
+        <td>Draft trước launch — PDPA (Singapore) compliant</td>
+        <td>Legal + Dev</td>
+      </tr>
+      <tr>
+        <td>Smart contract audit</td>
+        <td class="risk-med">🟡 Medium</td>
+        <td>External audit nếu có on-chain logic — CertiK hoặc tương đương</td>
+        <td>Dev Lead</td>
+      </tr>
+    </table>
+    <div class="muted">Budget legal estimate: $2,000–$5,000 (chưa include trong one-time cost hiện tại — cần add)</div>
+  </div>
+
+  <div class="card">
+    <h3>4.5 Tech Readiness Gate <span class="badge badge-new">NEW</span></h3>
+    <p>Go/no-go checklist — phải pass <b>TẤT CẢ</b> trước event (tech freeze W10):</p>
+    <table>
+      <tr><th>Gate</th><th>Criteria</th><th>Owner</th></tr>
+      <tr><td>MVP stable</td><td>Zero critical bugs · demo flow end-to-end không fail</td><td>Dev Lead</td></tr>
+      <tr><td>Load test</td><td>Stable với 100+ concurrent users</td><td>Dev Lead</td></tr>
+      <tr><td>Smart contract audit</td><td>Passed (nếu có on-chain)</td><td>External auditor</td></tr>
+      <tr><td>Demo environment</td><td>Separate staging env cho event — không dùng prod</td><td>Dev Lead</td></tr>
+      <tr><td>Backup plan</td><td>Nếu live demo fail → pre-recorded video backup sẵn</td><td>MKT Lead</td></tr>
+      <tr><td>Tech freeze</td><td>Không deploy feature mới trong 1 tuần trước event</td><td>Dev Lead</td></tr>
+    </table>
+    <div class="muted">Nếu bất kỳ gate nào fail vào W10 → postpone event, không force launch.</div>
+  </div>
+
+  <div class="card">
+    <h3>4.6 Review Cadence & Escalation <span class="badge badge-new">NEW</span></h3>
+    <table>
+      <tr><th>Cadence</th><th>Who</th><th>What</th><th>Escalate if</th></tr>
+      <tr><td>Weekly sync (Thứ 2, 9AM)</td><td>CEO + Dev + MKT</td><td>KPI progress, blockers, budget burn</td><td>Miss 2 tuần liên tiếp</td></tr>
+      <tr><td>Monthly review (cuối tháng)</td><td>Grey + CEO</td><td>MRR, community growth, runway</td><td>Miss 50% target tháng đó</td></tr>
+      <tr><td>Airdrop checkpoint</td><td>MKT Lead</td><td>Wallet signups, abuse/sybil check</td><td>Wallet signups &lt; 1,000 sau 2 tuần</td></tr>
+    </table>
+    <div style="margin-top:12px">
+      <b>Pivot criteria (nếu tháng 1 miss target):</b>
+      <ul>
+        <li>&lt; 500 waitlist signups → double down KOL, pause paid ads</li>
+        <li>&lt; 1,000 wallet signups → review airdrop mechanic, tăng reward</li>
+        <li>Community growth &lt; 50% target → AMA thêm, check content quality</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- TÀI CHÍNH TỔNG HỢP -->
+  <h2>Tổng hợp tài chính launch — v3</h2>
+  <div class="card">
+    <h3>One-time (updated với legal)</h3>
+    <table>
+      <tr><th>Khoản</th><th>USD</th></tr>
+      <tr><td>Singapore setup (corp + bank)</td><td>~$4,000–$7,000</td></tr>
+      <tr><td>Legal opinion (MAS + MLM + AML)</td><td>~$2,000–$5,000</td></tr>
+      <tr><td>Marketing 3 tháng</td><td>$20,000</td></tr>
+      <tr><td>Grand opening event (50 pax)</td><td>$11,000</td></tr>
+      <tr><td>Airdrop USDT rewards pool</td><td>$3,000–$5,000</td></tr>
+      <tr><th>TỔNG</th><th>~$40,000–$48,000</th></tr>
+    </table>
+
+    <h3>Monthly burn</h3>
+    <table>
+      <tr><th>Khoản</th><th>/tháng</th></tr>
+      <tr><td>CEO</td><td>$5,000</td></tr>
+      <tr><td>Dev team</td><td>$2,500</td></tr>
+      <tr><td>Marketing team</td><td>$2,500</td></tr>
+      <tr><td>Singapore corp recurring</td><td>~$1,600</td></tr>
+      <tr><th>Base burn</th><th>~$11,600–$12,000</th></tr>
+      <tr><td>+ Full social execution</td><td>+$10,000</td></tr>
+      <tr><th>Full scale burn</th><th>~$21,600–$22,000</th></tr>
+    </table>
+
+    <div style="margin-top:16px;padding:14px;background:#1a0e0e;border:1px solid #5a1a1a;border-radius:10px">
+      <b style="color:#ff8a8a">⚠️ Capital requirement để anh confirm:</b>
+      <ul style="margin-top:8px">
+        <li>Liquid cần cho 3 tháng đầu: <b style="color:#ff8a8a">~$80K</b></li>
+        <li>Legal budget chưa có trong plan cũ: <b style="color:#f5c842">+$2–5K</b> cần add</li>
+        <li>Nếu chưa có capital source rõ ràng → đây là blocker #1 trước mọi thứ khác</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="muted" style="margin-top:24px;border-top:1px solid #1e2d50;padding-top:16px">
     Prepared for Grey · ClawAI Crypto Project · 08/04/2026<br>
-    v2 additions by Moon: Crypto-native PR · AMA Series · Airdrop USDT · Community Infrastructure · KOL tiers · Content Calendar
+    v1: Violet (corp + marketing + event) · v2: Moon (crypto-native PR, AMA, airdrop, KOL, community) · v3: Moon + Violet (master timeline, RACI, cash flow, legal checklist, tech gate, review cadence)
   </p>
 </div>
 </body>
